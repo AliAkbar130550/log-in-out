@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: tahoma;
+}
+.wrapper{
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: transparent;
+    box-shadow: 0 0 50px 5px aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+}
+.wrapper:hover{
+animation: ali 1s infinite ;
+}
+.form-login{
+    transition: .7s ease-in-out;
+}
+.form-login h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.input-group{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    position: relative;
+    margin: 20px 0;
+}
+
+
+.input-group input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    color: white;font-size: 18px;
+    
+    height: 100%;
+}
+
+.input-group input:focus~label, 
+.input-group input:valid~label{
+    top:-15px;
+}
+.input-group label{
+ position: absolute;
+ left:0;
+ top: 45%;color: white;
+ font-size: 19px;
+ transition: .4s ease-in-out;
+}
+.remember{
+    margin: 30px 0 10px
+}
+.remember input[type="checkbox"]{
+    accent-color: aqua;margin-right: 10px;
+}
+.remember label{
+    color: white;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background-color: aqua;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    
+    
+}
+@keyframes ali{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.pra{
+    margin: 0 5px;
+    text-align: center;
+}
+.pra p{
+    color: white;
+    font-size: 19px;
+    margin-top: 10px;
+}
+.pra a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 19px;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+/* wrapper 2 */
+
+.form-signup{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+   width: 75%;
+}
+.active{
+    transform: translateY(-470px);
+}
